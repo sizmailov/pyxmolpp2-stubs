@@ -1,0 +1,7 @@
+*.log
+*.pyc
+.idea/*
+coverage
+gmon.out
+.pytest_cahce/
+__pycache__/
