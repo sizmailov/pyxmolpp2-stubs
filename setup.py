@@ -65,5 +65,5 @@ setup(
     },
     # PEP 561 requires these
     install_requires=['pyxmolpp2'],
-    package_data=find_stubs('pyxmolpp2-stubs'),
+    package_data=find_stubs('pyxmolpp2-stubs')
 )
