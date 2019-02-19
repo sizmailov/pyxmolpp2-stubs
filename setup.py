@@ -55,7 +55,7 @@ setup(
     maintainer_email="sergei.a.izmailov@gmail.com",
     description="PEP 561 type stubs for pyxmolpp2",
     url="https://github.com/sizmailov/pyxmolpp2",
-    version="0.0.2",
+    version="0.0.3",
     packages=['pyxmolpp2-stubs'],
     cmdclass={
         'generate_stubs': GenerateStubsCommand,
