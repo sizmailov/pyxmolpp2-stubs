@@ -32,7 +32,7 @@ class GenerateStubsCommand(distutils.cmd.Command):
             'Running command: pybind11_stubgen.py',
             level=distutils.log.INFO)
         subprocess.call([sys.executable,
-                         os.path.join(os.path.dirname(__file__), "external", "pybind11-stubgen",
+                         os.path.join(os.path.dirname(__file__), "external", "pybind11_stubgen",
                                       "pybind11_stubgen.py"),
                          "--output-dir", os.path.dirname(os.path.abspath(__file__)),
                          "--no-setup-py",
