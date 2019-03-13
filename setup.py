@@ -64,6 +64,6 @@ setup(
         'build_py': generate_stubs_before(build_py)
     },
     # PEP 561 requires these
-    install_requires=['pyxmolpp2'],
+    install_requires=['pyxmolpp2', 'typing'],
     package_data=find_stubs('pyxmolpp2-stubs')
 )
