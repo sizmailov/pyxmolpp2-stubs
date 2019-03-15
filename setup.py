@@ -32,8 +32,11 @@ class GenerateStubsCommand(distutils.cmd.Command):
             'Running command: pybind11_stubgen.py',
             level=distutils.log.INFO)
         subprocess.call([sys.executable,
-                         os.path.join(os.path.dirname(__file__), "external", "pybind11_stubgen",
-                                      "pybind11_stubgen.py"),
+                         os.path.join(os.path.dirname(__file__),
+                                      "external",
+                                      "pybind11-stubgen",
+                                      "pybind11_stubgen",
+                                      "__init__.py"),
                          "--output-dir", os.path.dirname(os.path.abspath(__file__)),
                          "--no-setup-py",
                          "pyxmolpp2"
@@ -55,7 +58,7 @@ setup(
     maintainer_email="sergei.a.izmailov@gmail.com",
     description="PEP 561 type stubs for pyxmolpp2",
     url="https://github.com/sizmailov/pyxmolpp2",
-    version="0.0.5",
+    version="0.0.6",
     packages=['pyxmolpp2-stubs'],
     cmdclass={
         'generate_stubs': GenerateStubsCommand,
